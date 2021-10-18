@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'NEOSANSARABIC';
     src: 
-        url('../font/NEOSANSARABIC-LIGHT.ttf') format('truetype');
+        url('../font/NEOSANSARABIC-LIGHT.TTF') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'NEOSANSARABIC';
     src: 
-        url('../font/NEOSANSARABIC.ttf') format('truetype');
+        url('../font/NEOSANSARABIC.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'NEOSANSARABIC';
     src:
-        url('../font/NEOSANSARABIC-BOLD.ttf') format('truetype');
+        url('../font/NEOSANSARABIC-BOLD.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -30,7 +30,7 @@
 @font-face {
     font-family: 'NEOSANSARABIC';
     src: 
-        url('../font/NEOSANSARABIC-BLACK.ttf') format('truetype');
+        url('../font/NEOSANSARABIC-BLACK.TTF') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
