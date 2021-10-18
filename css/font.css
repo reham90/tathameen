@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'NEOSANSARABIC';
-    src: url('../font/NEOSANSARABIC-LIGHT.woff2') format('woff2'),
-        url('../font/NEOSANSARABIC-LIGHT.woff') format('woff'),
+    src: 
+        
         url('../font/NEOSANSARABIC-LIGHT.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'NEOSANSARABIC';
-    src: url('../font/NEOSANSARABIC.woff2') format('woff2'),
-        url('../font/NEOSANSARABIC.woff') format('woff'),
+    src: 
+       
         url('../font/NEOSANSARABIC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -21,8 +21,7 @@
 
 @font-face {
     font-family: 'NEOSANSARABIC';
-    src: url('../font/NEOSANSARABIC-BOLD.woff2') format('woff2'),
-        url('../font/NEOSANSARABIC-BOLD.woff') format('woff'),
+    src: 
         url('../font/NEOSANSARABIC-BOLD.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -31,9 +30,8 @@
 
 
 @font-face {
-    font-family: 'tajawal';
-    src: url('../font/NEOSANSARABIC-BLACK.woff2') format('woff2'),
-        url('../font/NEOSANSARABIC-BLACK.woff') format('woff'),
+    font-family: 'NEOSANSARABIC';
+    src:
         url('../font/NEOSANSARABIC-BLACK.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
