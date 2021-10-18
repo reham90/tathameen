@@ -564,7 +564,7 @@ html[dir="ltr"] .copy{
 html[dir="ltr"] .nav-dropdown{
       left: 50%;
     width: 190px;
-    transform: translateX(43%);
+    transform: translateX(50%);
 }
 html[dir="ltr"] .header-text h1{
   width: 820px;
@@ -2172,7 +2172,7 @@ transform: translateY(-17%);
    background: transparent;
     box-shadow: none;
    left: 50%;
-   transform: translateX(-43%);
+   transform: translateX(-50%);
 }
 
 
