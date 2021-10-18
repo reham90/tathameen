@@ -243,6 +243,8 @@ html[dir="rtl"] .read-more span{
 
 html[dir="rtl"] .header-text{
   margin-right: 0;
+  width: 100%;
+    left: 0;
 }
 
  html[dir="rtl"] .language{
@@ -610,7 +612,11 @@ html[dir="ltr"] .read-more span{
 
 
 @media only screen and (max-width: 991px)  {
- 
+ html[dir="ltr"] .header-text{
+  margin-left: 0;
+  width: 100%;
+    right: 0;
+}
 html[dir="ltr"] .language{
     right: 0;
    }
