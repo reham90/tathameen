@@ -88,6 +88,12 @@ color: #818181;
 html[dir="rtl"] .more-bg:hover a{
   left: 43%;
 }
+ html[dir="rtl"] .join button{
+ left: -7px;
+}
+html[dir="rtl"] .join:hover button{
+  left: 43%;
+}
  html[dir="rtl"] .about-us-text p{
  padding-right: 57px;
 }
@@ -405,6 +411,13 @@ html[dir="ltr"] .more-bg:hover a{
   right: 43%;
 
 }
+ html[dir="ltr"] .join button{
+right: -7px;
+}
+html[dir="ltr"] .join:hover button{
+  right: 43%;
+
+}
  html[dir="ltr"] .nav-nav ul li{
   float: left;
   text-align: left;
@@ -587,6 +600,10 @@ html[dir="ltr"] .more-bg span{
   right: -42px;
   left: 85px;
 }
+html[dir="ltr"] .join span{
+  right: -42px;
+  left: 85px;
+}
 html[dir="ltr"] .header-scroll-down img{
  transform: scaleX(-1);
 }
@@ -603,9 +620,7 @@ html[dir="ltr"] .chart-3-block h2{
 html[dir="ltr"] .join button{
   right: -7px;
 }
- html[dir="ltr"] .join-button span{
-  padding-left: 20px;
- }
+
 html[dir="ltr"] .read-more span{
   padding-left: 20px;
 }
@@ -1732,20 +1747,57 @@ height: 1px;
       align-items: center;
       width: 126px;
 }
+
+.join:hover .first-arrow{
+display: none;
+}
+.join:hover .sec-arrow{
+  display: inline-block;
+  color: #fff;
+}
+.join:hover{
+  background: #1e50a1;
+  width: 135px;
+}
+.join button{
+  color: #000;
+  font-size: 15px;
+  top:50%;
+  transform: translateY(-50%);
+ transition: 0.5s;
+ position: absolute;
+ 
+}
+.join button:hover{
+  text-decoration: none;
+  color: #a19f9f;
+ 
+}
+.join:hover button{
+ color: #fff;
+}
+.join span{
+      position: absolute;
+    left: -42px;
+    font-size: 20px;
+    color: #000;
+}
 .join{
-  background-color: rgb(238, 238, 238);
- width: 68px;
+ background-color: rgb(238, 238, 238);
+width: 68px;
   height: 42px;
-  display: flex;
-  justify-content: flex-end;
+
+ transition: 0.5s;
   position: relative;
-  align-items: center;
+cursor: pointer;
+transition: 0.5s;
+  
+  position: relative;
+ 
   transition: 0.5s;
   cursor: pointer;
 }
-.join:hover{
-  background: #224495;
-}
+
 .join button{
 color: #000;
   font-size: 15px;
@@ -1761,10 +1813,7 @@ color: #000;
   
   color: rgb(238, 238, 238);
 }
-.join-buuton span{
-  font-size: 20px;
-  color: #000;
-}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .articles{
