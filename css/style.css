@@ -97,9 +97,7 @@ html[dir="rtl"] .join:hover button{
  html[dir="rtl"] .about-us-text p{
  padding-right: 57px;
 }
-html[dir="rtl"] .about-us-text a{
-  right: 88px;
-}
+
 
  html[dir="rtl"] .about-us-text p:before{
  right: 97px;
@@ -222,9 +220,11 @@ html[dir="rtl"] .join button{
 }
  html[dir="rtl"] .join-button span{
   padding-right: 20px;
+  left: -22px;
  }
 html[dir="rtl"] .work-block{
-  justify-content: space-around;
+  justify-content: center;
+  padding: 15px;
 }
 html[dir="rtl"] .read-more span{
   padding-left: 20px;
@@ -309,7 +309,8 @@ html[dir="rtl"] .work-block h2:before{
   right: 0;
 }
 html[dir="rtl"] .work-block h2{
- padding-right: 33px;
+ padding-right: 25px;
+ font-size: 20px;
 }
 html[dir="rtl"] .articles-content{
   margin-right: 0;
@@ -466,9 +467,7 @@ color: #818181;
  html[dir="ltr"] .about-us-text p{
  padding-left: 57px;
 }
-html[dir="ltr"] .about-us-text a{
-  left: 88px;
-}
+
 
  html[dir="ltr"] .about-us-text p:before{
  left: 97px;
@@ -590,7 +589,7 @@ html[dir="ltr"] .copy{
 html[dir="ltr"] .nav-dropdown{
       left: 50%;
     width: 190px;
-    transform: translateX(50%);
+    transform: translateX(-50%);
 }
 html[dir="ltr"] .header-text h1{
   width: 820px;
@@ -690,6 +689,7 @@ html[dir="ltr"] .chart-5{
 }
 html[dir="rtl"] .work-block h2:before{
   left: 0;
+  right: 0;
 }
 html[dir="ltr"] .work-block h2{
  padding-left: 15px;
@@ -2558,8 +2558,8 @@ margin-top: 15px;
   font-size: 22px;
 }
 .join-button{
-  /* width: 97px; */
-  padding-right: 15px;
+  width: 97px;
+  /* padding-right: 15px; */
 }
 .articles{
       height: auto;
@@ -2631,6 +2631,7 @@ margin-top: 15px;
   display: block;
   padding-bottom: 0;
   margin-top: 30px;
+  width: 100%;
 }
 
 .hidden-lg{
