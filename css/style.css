@@ -102,9 +102,7 @@ html[dir="rtl"] .join:hover button{
  html[dir="rtl"] .about-us-text p:before{
  right: 97px;
 }
- html[dir="rtl"] .about-us-text a span{
- left: 5px;
-}
+
  html[dir="rtl"] .services-content{
   margin-right: 288px
 }
@@ -223,8 +221,8 @@ html[dir="rtl"] .join button{
   left: -22px;
  }
 html[dir="rtl"] .work-block{
-  justify-content: center;
-  padding: 15px;
+  /* justify-content: center; */
+  /* padding: 15px; */
 }
 html[dir="rtl"] .read-more span{
   padding-left: 20px;
@@ -472,9 +470,7 @@ color: #818181;
  html[dir="ltr"] .about-us-text p:before{
  left: 97px;
 }
- html[dir="ltr"] .about-us-text a span{
- right: 5px;
-}
+
  html[dir="ltr"] .services-content{
   margin-left: 288px
 }
@@ -601,7 +597,7 @@ html[dir="ltr"] .more-bg span{
 }
 html[dir="ltr"] .join span{
   right: -42px;
-  left: 85px;
+  left: 52px;
 }
 html[dir="ltr"] .header-scroll-down img{
  transform: scaleX(-1);
@@ -861,13 +857,7 @@ width: 68px;
 cursor: pointer;
 transition: 0.5s;
 }
-.more-bg:hover .first-arrow{
-display: none;
-}
-.more-bg:hover .sec-arrow{
-  display: inline-block;
-  color: #fff;
-}
+
 .more-bg:hover{
   background: #1e50a1;
   width: 135px;
@@ -888,6 +878,9 @@ display: none;
 }
 .more-bg:hover a{
  color: #fff;
+}
+.more-bg:hover span{
+  color: #fff;
 }
 .more-bg span{
       position: absolute;
@@ -979,8 +972,8 @@ display: none;
   z-index: 9;
   transition: 0.5s;
   background: #fff;
-  left: 49%;
-  transform: translateX(-25%);
+  left: 50%;
+  transform: translateX(-34%);
   padding: 15px 15px 20px;
   box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
   width: 190px;
@@ -1217,32 +1210,9 @@ background-position: center;
   
   position: absolute;
 }
-.about-us-text a{
-  font-size: 15px;
-  color: #1e50a1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: rgb(238, 238, 238);
-  width: 141px;
-  height: 42px;
-  margin-top: 51px;
-  position: relative;
-  transition: 0.5s;
-  position: absolute;
-  /* right: 88px; */
-}
-.about-us-text a span{
-  font-size: 15px;
-    position: absolute;
-    
-    bottom: 3px;
-}
-.about-us-text a:hover{
-  text-decoration: none;
-  background: #1e50a1;
-  color: #fff;
-}
+
+
+
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1651,6 +1621,9 @@ height: 1px;
 .mt0{
   margin-top: 0 !important;
 }
+.mt47{
+  margin-top: 47px !important;
+}
 .chart-3{
   display: grid;
   grid-template-columns: repeat(3,263px);
@@ -1724,7 +1697,9 @@ height: 1px;
    width: 555px;
    height: 102px;
    background: #fff;
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   grid-gap: 50px;
    justify-content: center;
    align-items: center;
 }
@@ -2320,12 +2295,7 @@ transform: translateY(-17%);
   width: 0;
   height: 0;
 }
-.about-us-text a{
-      position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-}
+
 .about-us{
   height: 415px;
 }
