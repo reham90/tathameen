@@ -673,6 +673,11 @@ html[dir="ltr"] .work-block{
    position: relative;
     margin-top: 140px;
 }
+html[dir="ltr"] .nav-dropdown{
+  width: 100% !important;
+  left: 50% !important;
+  transform: translateX(0) !important;
+}
 html[dir="ltr"] .member-name h2{
   font-size: 15px;
 }
