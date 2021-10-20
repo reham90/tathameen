@@ -240,9 +240,15 @@ html[dir="rtl"] .join:hover button{
   left: 43%;
 
 }
-
-
-
+html[dir="rtl"] .more-bg:hover a{
+  right: 17px;
+}
+html[dir="rtl"] .more-bg:hover span{
+  left: 25px;
+}
+html[dir="rtl"] .join:hover .sec-arrow{
+  left: -39px !important;
+}
 
 
 
@@ -568,7 +574,7 @@ html[dir="ltr"] .chart-3{
   margin-left: 114px;
 }
 html[dir="ltr"] .chart-3:before{
- right: 129px;
+ left: 129px;
 }
 html[dir="ltr"] .chart-5{
 margin-right: 30px;
@@ -637,7 +643,7 @@ html[dir="ltr"] .member-name h2{
 }
 html[dir="ltr"] .line:after{
   right: -247px;
-  left: 142px;
+  left: 185px;
 }
 html[dir="ltr"] .chart-3-block h2{
   width: 165px;
@@ -655,7 +661,9 @@ html[dir="ltr"] .nav-nav:after{
 html[dir="ltr"] .work-block{
   grid-gap: 50px;
 }
-
+html[dir="ltr"] .more-bg:hover a{
+  left: 17px;
+}
 
 
 
@@ -677,6 +685,13 @@ html[dir="ltr"] .nav-dropdown{
   width: 100% !important;
   left: 50% !important;
   transform: translateX(0) !important;
+}
+html[dir="ltr"] .chart-3:before{
+  right:129px;
+  left: 50px;
+}
+html[dir="ltr"] .line:after{
+  left: 142px;
 }
 html[dir="ltr"] .member-name h2{
   font-size: 15px;
