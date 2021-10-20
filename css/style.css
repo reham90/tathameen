@@ -2394,6 +2394,7 @@ bottom: 27%;
 }
 .menu-screen .social{
   margin-top: 0 !important;
+  display: flex;
 }
 .social div i{
 font-size: 16px;
