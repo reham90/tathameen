@@ -619,8 +619,12 @@ html[dir="ltr"] .join button{
 html[dir="ltr"] .read-more span{
   padding-left: 20px;
 }
-
-
+html[dir="ltr"] .nav-nav:after{
+  width: 474px;
+}
+html[dir="ltr"] .work-block{
+  grid-gap: 50px;
+}
 
 
 
@@ -899,8 +903,17 @@ transition: 0.5s;
   opacity: 1;
 }
 .nav-nav{
-  border-bottom: 1px solid rgba(33, 33, 33, 0.102);
- 
+  position: relative;
+}
+.nav-nav:after{
+  content: "";
+  width: 403px;
+  height: 1px;
+  background:rgba(33, 33, 33, 0.102);
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  left: 0;
 }
 .nav-nav ul li a:last-child{
   padding: 0;
@@ -1699,7 +1712,7 @@ height: 1px;
    background: #fff;
    display: grid;
    grid-template-columns: repeat(2,auto);
-   grid-gap: 50px;
+   grid-gap: 113px;
    justify-content: center;
    align-items: center;
 }
@@ -1721,6 +1734,7 @@ height: 1px;
       justify-content: flex-end;
       align-items: center;
       width: 126px;
+      flex-direction: row-reverse;
 }
 
 .join:hover .first-arrow{
