@@ -86,9 +86,7 @@ color: #818181;
  html[dir="rtl"] .more-bg a{
  left: -7px;
 }
-html[dir="rtl"] .more-bg:hover a{
-  left: 43%;
-}
+
  html[dir="rtl"] .join button{
  left: -7px;
 }
@@ -113,6 +111,12 @@ html[dir="rtl"] .join:hover button{
 html[dir="rtl"] .service .owl-next{
   right: 65%;
  }
+  html[dir="rtl"] .vesion .owl-prev{
+  right: 62%;
+ }
+html[dir="rtl"] .vesion .owl-next{
+  right: 65%;
+ }
   html[dir="rtl"] .client .owl-prev{
   right: 62%;
  }
@@ -126,6 +130,9 @@ html[dir="rtl"] .art .owl-next{
   right: 81% !important;
  }
 html[dir="rtl"] .service:after{
+  right: 0;
+}
+html[dir="rtl"] .vesion:after{
   right: 0;
 }
 html[dir="rtl"] .client:after{
@@ -258,9 +265,15 @@ html[dir="rtl"] .read-more span{
 html[dir="rtl"] .header-text{
   margin-right: 0;
   width: 100%;
-    left: 0;
+    position: relative;
+    margin-top: 140px;
 }
-
+html[dir="rtl"] .more-bg span{
+  left: -12px;
+}
+html[dir="rtl"] .nav-toggle{
+  left: 55px;
+}
  html[dir="rtl"] .language{
     right: 15px;
    }
@@ -272,13 +285,13 @@ html[dir="rtl"] .services-content{
   margin-right: 0;
 }
 html[dir="rtl"] .counter-1{
-  right: 15px;
+  right: 0;
 }
 html[dir="rtl"] .counter-2{
-  right: 115px;
+  right: 0;
 }
 html[dir="rtl"] .counter-3{
-  right: 15px;
+  right: 0;
 }
 html[dir="rtl"] .accomplishment-carousel{
   margin-right: 0;
@@ -293,10 +306,11 @@ html[dir="rtl"] .team-title{
   margin-right: 0;
 }
 html[dir="rtl"] .member-img{
-  right: 0;
+  right: -30px;
+  top: -4px;
 }
 html[dir="rtl"] .member-name{
-  padding-right: 95px;
+  padding-right: 50px;
 }
 html[dir="rtl"] .chart-2{
   margin-right: 0;
@@ -411,10 +425,7 @@ html[dir="ltr"] .header-scroll-down{
  html[dir="ltr"] .more-bg a{
 right: -7px;
 }
-html[dir="ltr"] .more-bg:hover a{
-  right: 43%;
 
-}
  html[dir="ltr"] .join button{
 right: -7px;
 }
@@ -491,6 +502,12 @@ html[dir="ltr"] .art .owl-next{
 html[dir="ltr"] .service .owl-next{
   left: 62%;
  }
+   html[dir="ltr"] .vesion .owl-prev{
+  left: 65%;
+ }
+html[dir="ltr"] .vesion .owl-next{
+  left: 62%;
+ }
    html[dir="ltr"] .client .owl-prev{
   left: 65%;
  }
@@ -498,6 +515,9 @@ html[dir="ltr"] .client .owl-next{
   left: 62%;
  }
 html[dir="ltr"] .service:after{
+  left: 0;
+}
+html[dir="ltr"] .vesion:after{
   left: 0;
 }
 html[dir="ltr"] .client:after{
@@ -531,7 +551,8 @@ html[dir="ltr"] .team-title{
   margin-left: 98px;
 }
 html[dir="ltr"] .member-img{
-  left: -50px;
+  left: -30px;
+  top: -4px;
 }
 html[dir="ltr"] .member-name{
   padding-left: 62px;
@@ -648,7 +669,14 @@ html[dir="ltr"] .work-block{
  html[dir="ltr"] .header-text{
   margin-left: 0;
   width: 100%;
-    right: 0;
+   position: relative;
+    margin-top: 140px;
+}
+html[dir="ltr"] .more-bg span{
+  right: -12px;
+}
+html[dir="ltr"] .nav-toggle{
+  right: 55px;
 }
 html[dir="ltr"] .language{
     left: 15px;
@@ -816,10 +844,7 @@ top:0;
   width: 100%;
  
 }
-.cover-2{
-  background: transparent !important;
 
-}
 .header-scroll-down{
   position: absolute;
   bottom: 0;
@@ -926,14 +951,7 @@ transition: 0.5s;
 .nav-nav ul li a:last-child{
   padding: 0;
 }
-.cover-2{
- 
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
+
 .navigation{
      background: transparent;
      display: flex;
@@ -1073,13 +1091,17 @@ box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
 .nav-toggle {position: absolute;top: 80px;cursor: pointer;}
 .nav-toggle i{
   cursor: pointer;
-  font-size: 17px;
-  color: #1e50a1;
+  font-size: 16px;
+      width: 40px;
+    height: 41px;
+    border-radius: 100%;
+    background: rgb(34, 68, 149);
+  color: #fff;
   position: absolute;
   content: "";
   font-weight: bold;
   display: none;
-  top:-43px;
+  top:-56px;
 }
 .nav-toggle.active i {
   background-color: transparent;
@@ -1261,6 +1283,9 @@ background-position: center;
 .service{
   padding-top: 75px;
 }
+.vesion{
+  padding-top: 75px;
+}
 .service-block a{
   font-size: 23px;
   color: #000;
@@ -1326,6 +1351,56 @@ background-position: center;
  
 }
 
+
+
+.vesion .owl-nav button.owl-prev, .vesion .owl-nav button.owl-next{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s;
+    
+  
+}
+.vesion .owl-nav button.owl-prev i, .vesion .owl-nav button.owl-next i{
+  font-size: 15px;
+  color: #000;
+}
+.vesion .owl-nav button.owl-prev:hover, .vesion .owl-nav button.owl-next:hover{
+  color: #1e50a1;
+  background: transparent;
+}
+.vesion .owl-nav{
+    
+    width: 0;
+    height: 0;
+    
+}
+.vesion .owl-prev{
+
+    
+    position: absolute;
+    bottom: -42px;
+   
+}
+.vesion .owl-next{
+ 
+  right: 65%;
+    position: absolute;
+    bottom: -42px;
+}
+.vesion .owl-dots{
+ display: none;
+}
+.vesion:after{
+  content: "";
+  width: 876px;
+  height: 1px;
+  background: rgb(189, 189, 189);
+  position: absolute;
+  bottom: -32px;
+ 
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1705,6 +1780,12 @@ height: 1px;
 .chart-5:before{
   content: url(../images/line-2.png);
   position: absolute;
+  top: -30px;
+}
+.new-line:before{
+  content: url(../images/line-2.png);
+  position: absolute;
+  transform: scaleX(-1);
   top: -30px;
 }
 .work-div{
@@ -2233,17 +2314,27 @@ width: 279px;
 /* responsive */
 @media only screen and (max-width: 991px)  {
 
-.cover-2{
-   background: rgb(255 255 255 / 0%) !important;
-}
+
 .more-bg span{
-  display: none;
+  position: relative;
+   
+    color: #fff;
 }
 .header-text h1{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 34px;
+ 
   width: 100% !important;
-  /* color: #fff; */
+  
+}
+.heaedr-banner{
+  height: 373px;
+}
+.header-banner-img img{
+  margin-top: 86px;
+}
+.nav-nav:after{
+  width: 0;
+  height: 0;
 }
 .header-text{
  
@@ -2255,15 +2346,38 @@ transform: translateY(-17%);
 }
 .header-text p{
   width: 100% !important;
-  margin-top: 15px;
-  /* color: #fff; */
-  font-size: 15px;
+     margin-top: 21px;
+  
+    margin-bottom: 23px;
+    font-size: 18px;
 }
 .more-bg{
   left: 50%;
     transform: translateX(-50%);
     margin-top: 0;
     position: absolute;
+        width: 137px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e50a1;
+
+}
+.more-bg:hover{
+  width: 137px;
+
+}
+.more-bg a{
+      color: #fff;
+    font-size: 15px;
+    top: 0;
+    transform: translateY(0%);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-section{
   height: auto;
@@ -2288,10 +2402,14 @@ transform: translateY(-17%);
 .navigation{
    border-top: 0;
     border-bottom: 0;
-    padding-bottom: 0;
+       padding-top: 10px;
+    padding-bottom: 18px;
     flex-wrap: nowrap;
-    width: 93%;
-
+    width: 100%;
+background: #fff;
+}
+.p0{
+  padding: 0;
 }
 .logo{
       width: 165px;
@@ -2311,7 +2429,11 @@ transform: translateY(-17%);
 }
 .about-us-text p{
   text-align: center;
-  width: 100%;
+    width: 100%;
+    padding-right: 32px !important;
+    padding-left: 32px;
+    margin-top: 24px;
+    margin-bottom: 0;
 }
 .about-us-text p:before{
   width: 0;
@@ -2319,7 +2441,11 @@ transform: translateY(-17%);
 }
 
 .about-us{
-  height: 415px;
+      background: #f8f9fa;
+    margin-top: 105px;
+    display: block;
+    padding-top: 77px;
+    padding-bottom: 81px;
 }
 .services-content h2{
   text-align: center;
@@ -2329,9 +2455,23 @@ transform: translateY(-17%);
 }
 .service{
   visibility: visible;
-  padding-top: 30px;
+  padding-top: 38px;
   padding-right: 15px;
   padding-left: 15px;
+
+}
+.service .owl-dots .owl-dot span{
+    width: 15px;
+    height: 1px;
+    margin: 5px 5px;
+    background: rgb(189, 189, 189);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0;
+}
+.service .owl-dots .owl-dot.active span, .service .owl-dots .owl-dot:hover span{
+  background: rgb(117, 117, 117);
 }
 .service:after{
   width: 0;
@@ -2349,7 +2489,43 @@ display: block;
 }
 .services{
      height: auto;
-    padding-bottom: 60px;
+     padding-bottom: 91px;
+     background: #fff;
+}
+
+.vesion{
+  visibility: visible;
+  padding-top: 38px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+.vesion .owl-dots .owl-dot span{
+    width: 15px;
+    height: 1px;
+    margin: 5px 5px;
+    background: rgb(189, 189, 189);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0;
+}
+.vesion .owl-dots .owl-dot.active span, .vesion .owl-dots .owl-dot:hover span{
+  background: rgb(117, 117, 117);
+}
+.vesion:after{
+  width: 0;
+  height: 0;
+}
+.vesion .owl-nav{
+  display: none;
+}
+.vesion .owl-dots{
+display: none;
+}
+.vesion.owl-drag .owl-item{
+  float: none !important;
+  margin-bottom: 15px;
 }
 .client{
   visibility: visible;
@@ -2441,29 +2617,28 @@ padding: 150px 0 !important;
 .counter img{
   width: 100%;
 }
-.counter-content{
-  padding: 0 15px;
-}
+
 .counter-1{
   width: 100px;
-  height: 100px;
+  height: 197px;
   top: 0;
   z-index: 9;
+  position: relative;
+    width: 100%;
 }
-.counter-value{
-  font-size: 26px;
-}
-.counter-text p{
-  font-size: 12px;
-}
+
 .counter-2{
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 197px;
+  position: relative;
+  right: 0;
+  left: 0;
 }
 .counter-3{
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 197px;
   z-index: 9;
+  position: relative;
 }
 .counter{
   height: auto;
@@ -2471,6 +2646,8 @@ padding: 150px 0 !important;
 .accomplishment{
   height: auto;
   padding-bottom: 100px;
+  margin-top: 649px;
+  background: #f8f9fa;
 }
 .accomplishment-content{
   padding-top: 240px;
@@ -2515,6 +2692,7 @@ padding: 150px 0 !important;
 .team-title p{
   text-align: center;
   margin-top: 15px;
+  font-size: 19px;
 }
 .team-section{
   background-position: center;
@@ -2522,58 +2700,94 @@ padding: 150px 0 !important;
   padding-bottom: 60px;
 }
 .chart-1{
- 
+ margin-bottom: 26px;
 }
 .manager{
-  width: 100%;
+ width: 241px;
+    height: 76px;
 }
 .member-img img{
-  border: 0;
+  width: 85px;
+  height: 85px;
+}
+.member-name h2{
+  font-size: 21px;
+}
+.member-name p{
+  font-size: 11px;
 }
 .top{
 margin-top: 15px;
 }
 .chart-2{
   
-  margin-top: 15px;
-  grid-template-columns: repeat(1,auto);
-  grid-gap: 15px;
+margin-top: 40px;
+  
+grid-template-columns: repeat(2,143px);
+  
+grid-gap: 47px;
 }
 .chart-2-block h2{
   width: 100%;
   text-align: center;
+  font-size: 15px;
 }
 .line:after{
-  width: 0;
-  height: 0;
+  width: 47px;
+    left: -47px;
 }
 .chart-3{
   
-  margin-top: 15px;
-  grid-template-columns: repeat(1,auto);
-  grid-gap: 15px;
+margin-top: 27px;
+  
+grid-template-columns: repeat(3,103px);
+  
+grid-gap: 11px;
 }
 .chart-3:before{
-  content: "";
+  content: url(../images/line-2-mob.png);
+  right: 50px !important;
+  top: -18px;
 }
 .chart-4{
-  margin-top: 15px;
- flex-wrap: wrap;
+  margin-top: 26px;
+  flex-wrap: wrap;
 }
 .chart-5{
   margin-bottom: 15px;
- width: 100%;
-  grid-template-columns: repeat(1,auto);
+  width: 100%;
+  grid-template-columns: repeat(3,99px);
   grid-gap: 15px;
+  margin-top: 21px;
 }
 .chart-5:before{
-  content: "";
+  content: url(../images/line-mob.png);
+  right: 43px !important;
+  top: -42px;
+}
+.new-arrow{
+  color: #000 !important;
+display: inline-block;
+position: absolute;
+top: 14px;
+left: -6px;
+}
+.chart-4{
+  display: none;
+}
+.client-panel{
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  height: 200px;
 }
 .work-div{
   margin-top: 30px;
 }
 .work-block{
   width: 100%;
+  margin-top: 68px;
 }
 .work-block h2{
   font-size: 22px;
@@ -2593,7 +2807,9 @@ margin-top: 15px;
 }
 .articles-content p{
       margin-top: 15px;
-    text-align: center;
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
 }
 .art-carousel{
   margin-top: 15px;
@@ -2786,7 +3002,9 @@ margin-top: 15px;
   margin-left: 0;
 }
 .nav-toggle i{
-  display: block;
+ display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -2887,6 +3105,28 @@ margin-top: 15px;
     padding: 0 !important;
     position: static !important;
     height: auto !important;
+}
+.block-line{
+  height: 57px;
+}
+.chart-2-block p{
+  font-size: 8px;
+}
+.chart-3-block{
+  height: 47px;
+}
+.chart-3-block h2{
+  font-size: 9px;
+}
+.chart-6-block{
+  height: 60px;
+}
+.chart-6-block h2{
+  font-size: 11px;
+}
+.line-4:after{
+  width: 0;
+  height: 0;
 }
 }
 

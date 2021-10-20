@@ -89,6 +89,80 @@ $(function() {
 
 
 
+// vesion carousel //
+
+ if($(window).width()<991){
+
+       var owl = $('.vesion');
+    owl.owlCarousel({
+       
+        nav: true,
+        rtl: document.dir == 'rtl' ? true : false,
+        
+        autoplay: false,
+        
+        navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items:1
+            }
+
+        }
+    });
+    }
+
+    var owl = $('.vesion');
+    owl.owlCarousel({
+        margin: 30,
+        nav: true,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items:1
+            },
+            1200: {
+                items: 3
+            }
+
+        }
+    });
+
+    if($(window).width()<991){
+
+       var owl = $('.vesion');
+    owl.owlCarousel({
+       
+        nav: true,
+        rtl: document.dir == 'rtl' ? true : false,
+        
+        autoplay: false,
+        
+        navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items:1
+            }
+
+        }
+    });
+    }
+ 
+  // end vesion carousel //
+
 // js for counter //
 
 var a = 0;
