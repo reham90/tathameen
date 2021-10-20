@@ -20,7 +20,7 @@ html[dir="rtl"] .nav-nav ul li{
 
 html[dir="rtl"] .globe{
   padding-left: 5px;
-  color: #fff;
+  
 }
 
 html[dir="rtl"] .arrow-down{
@@ -379,7 +379,7 @@ html[dir="ltr"] body{
 
 html[dir="ltr"] .globe{
   padding-right: 5px;
-  color: #fff;
+ 
 }
 html[dir="ltr"] .arrow-down{
   padding-left: 8px;
@@ -2051,7 +2051,7 @@ width: 279px;
   border-color: rgb(57, 54, 134);
   width: 100%;
 }
-.social{
+.footer .social{
      list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -2388,9 +2388,12 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+ 
  position: absolute;
 bottom: 27%;
+}
+.menu-screen .social{
+  margin-top: 0 !important;
 }
 .social div i{
 font-size: 16px;
@@ -2399,6 +2402,9 @@ height: 40px;
 color: #fff;
 border-radius: 50%;
 border:1px solid rgba(255,255,255,0.2); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .social div{
@@ -2707,7 +2713,9 @@ margin-top: 15px;
 .dropbtn:hover .arrow-down{
   color: #fff;
 }
-
+.globe{
+  color: #fff;
+}
 
 
 
