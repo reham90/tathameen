@@ -54,9 +54,9 @@ color: #818181;
        left: 20px;
        color: #fff;
        font-size: 20px;
-       background: #1b063e;
-       width: 40px;
-       height: 40px;
+      background: rgba(0,0,0,0.149);
+    width: 40px;
+    height: 41px;
        display: flex !important;
        justify-content: center;
        align-items: center;
@@ -620,7 +620,7 @@ html[dir="ltr"] .read-more span{
   padding-left: 20px;
 }
 html[dir="ltr"] .nav-nav:after{
-  width: 474px;
+  width: 500px;
 }
 html[dir="ltr"] .work-block{
   grid-gap: 50px;
@@ -907,7 +907,7 @@ transition: 0.5s;
 }
 .nav-nav:after{
   content: "";
-  width: 403px;
+  width: 429px;
   height: 1px;
   background:rgba(33, 33, 33, 0.102);
   position: absolute;
@@ -2814,7 +2814,7 @@ margin-top: 15px;
 }
 .nav-nav ul{
   width: 100% !important;
-    background: rgba(42,39,114,0.97) !important;
+    background: rgba(34, 68, 149,0.969) !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
