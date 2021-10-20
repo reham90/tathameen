@@ -568,19 +568,16 @@ html[dir="ltr"] .chart-3{
   margin-left: 114px;
 }
 html[dir="ltr"] .chart-3:before{
- left: 129px;
+ right: 129px;
 }
 html[dir="ltr"] .chart-5{
 margin-right: 30px;
 }
 html[dir="ltr"] .chart-5:before{
- left: 81px;
+ right: 81px;
 }
 
- html[dir="ltr"] .work-block h2:before{
-left: -32px;
-    transform: scaleX(-1);
-} 
+ html[dir="ltr"] .work-block h2:before{left: -32px;transform: scaleX(-1);} 
  html[dir="ltr"] .articles{
   background-position: bottom left;
 }
@@ -640,7 +637,7 @@ html[dir="ltr"] .member-name h2{
 }
 html[dir="ltr"] .line:after{
   right: -247px;
-  left: 185px;
+  left: 142px;
 }
 html[dir="ltr"] .chart-3-block h2{
   width: 165px;
@@ -676,8 +673,12 @@ html[dir="ltr"] .work-block{
    position: relative;
     margin-top: 140px;
 }
+html[dir="ltr"] .member-name h2{
+  font-size: 15px;
+}
 html[dir="ltr"] .more-bg span{
   right: -12px;
+  left: 0;
 }
 html[dir="ltr"] .join:hover button{
   right: 0;
@@ -695,13 +696,13 @@ html[dir="ltr"] .services-content{
   margin-left: 0;
 }
 html[dir="ltr"] .counter-1{
-  left: 15px;
+  left: 0;
 }
 html[dir="ltr"] .counter-2{
-  left: 115px;
+  left: 0;
 }
 html[dir="ltr"] .counter-3{
-  left: 15px;
+  left: 0;
 }
 html[dir="ltr"] .accomplishment-carousel{
   margin-left: 0;
@@ -716,10 +717,10 @@ html[dir="ltr"] .team-title{
   margin-left: 0;
 }
 html[dir="ltr"] .member-img{
-  left: 0;
+  left: -27px;
 }
 html[dir="ltr"] .member-name{
-  padding-left: 95px;
+  padding-left: 68px;
 }
 html[dir="ltr"] .chart-2{
   margin-left: 0;
@@ -736,6 +737,7 @@ html[dir="rtl"] .work-block h2:before{
 }
 html[dir="ltr"] .work-block h2{
  padding-left: 15px;
+ font-size: 20px !important;
 }
 html[dir="ltr"] .read-more span{
   padding-left: 20px;
@@ -1830,7 +1832,6 @@ height: 1px;
       justify-content: flex-end;
       align-items: center;
       width: 126px;
-
       flex-direction: row-reverse;
 }
 
@@ -2450,10 +2451,10 @@ background: #fff;
 
 .about-us{
       background: #f8f9fa;
-    margin-top: 105px;
-    display: block;
-    padding-top: 77px;
-    padding-bottom: 81px;
+      margin-top: 105px;
+      display: block;
+      padding-top: 77px;
+      padding-bottom: 81px;
 }
 .services-content h2{
   text-align: center;
