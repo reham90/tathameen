@@ -90,9 +90,7 @@ color: #818181;
  html[dir="rtl"] .join button{
  left: -7px;
 }
-html[dir="rtl"] .join:hover button{
-  left: 43%;
-}
+
  html[dir="rtl"] .about-us-text p{
  padding-right: 57px;
 }
@@ -238,7 +236,10 @@ html[dir="rtl"] .work-block{
 html[dir="rtl"] .read-more span{
   padding-left: 20px;
 }
+html[dir="rtl"] .join:hover button{
+  left: 43%;
 
+}
 
 
 
@@ -270,6 +271,9 @@ html[dir="rtl"] .header-text{
 }
 html[dir="rtl"] .more-bg span{
   left: -12px;
+}
+html[dir="rtl"] .join:hover button{
+  left: 0;
 }
 html[dir="rtl"] .nav-toggle{
   left: 55px;
@@ -675,6 +679,9 @@ html[dir="ltr"] .work-block{
 html[dir="ltr"] .more-bg span{
   right: -12px;
 }
+html[dir="ltr"] .join:hover button{
+  right: 0;
+}
 html[dir="ltr"] .nav-toggle{
   right: 55px;
 }
@@ -724,8 +731,8 @@ html[dir="ltr"] .chart-5{
   margin-right: 0;
 }
 html[dir="rtl"] .work-block h2:before{
-  left: 0;
-  right: 0;
+  /* left: 0; */
+  right: -10px;
 }
 html[dir="ltr"] .work-block h2{
  padding-left: 15px;
@@ -1823,6 +1830,7 @@ height: 1px;
       justify-content: flex-end;
       align-items: center;
       width: 126px;
+
       flex-direction: row-reverse;
 }
 
@@ -1869,7 +1877,7 @@ width: 68px;
   position: relative;
 cursor: pointer;
 transition: 0.5s;
-  
+  margin-top: 0;
   position: relative;
  
   transition: 0.5s;
@@ -2473,6 +2481,20 @@ background: #fff;
 .service .owl-dots .owl-dot.active span, .service .owl-dots .owl-dot:hover span{
   background: rgb(117, 117, 117);
 }
+
+.client .owl-dots .owl-dot span{
+    width: 15px;
+    height: 1px;
+    margin: 5px 5px;
+    background: rgb(189, 189, 189);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0;
+}
+.client .owl-dots .owl-dot.active span, .client .owl-dots .owl-dot:hover span{
+  background: rgb(117, 117, 117);
+}
 .service:after{
   width: 0;
   height: 0;
@@ -2784,23 +2806,53 @@ left: -6px;
 }
 .work-div{
   margin-top: 30px;
+  /* display: block; */
 }
 .work-block{
   width: 100%;
   margin-top: 68px;
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  height: 165px;
+  grid-gap: 0;
 }
 .work-block h2{
   font-size: 22px;
+  width: 100%;
+  font-size: 23px !important;
 }
 .join-button{
-  width: 97px;
-  /* padding-right: 15px; */
+ width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+}
+.join{
+  position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.join button{
+  color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    position: relative;
+    background: transparent;
+    padding: 0;
+    transition: 0.5s;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .articles{
       height: auto;
-    padding-top: 60px;
-    background-position: center;
-    padding-bottom: 60px;
+      padding-top: 76px;
+      background-position: center;
+      padding-bottom: 60px;
+      background: #f8f9fa;
 }
 .articles-content h2{
   text-align: center;
@@ -2827,9 +2879,10 @@ left: -6px;
   align-items: center;
 }
 .clients{
-      padding-top: 60px;
-    padding-bottom: 60px;
+      padding-top: 76px;
+    padding-bottom: 95px;
     height: auto;
+    background: #f8f9fa;
 }
 .client{
   margin-top: 15px;
@@ -2939,7 +2992,10 @@ left: -6px;
 
 
 
-
+.accordion{
+  display: flex;
+  justify-content: center;
+}
 
 .footer-content{
  
@@ -2956,6 +3012,7 @@ left: -6px;
   justify-content: center !important;
   margin-bottom: 50px !important;
   margin-top: 30px !important;
+  position: relative;
 }
 .footer h3{
   text-align: center;
@@ -2990,10 +3047,11 @@ left: -6px;
 }
 .footer-list{
   margin-top: 0;
+  text-align: center;
 }
 .copy p{
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
       margin-bottom: 5px;
 }
 
@@ -3127,6 +3185,9 @@ left: -6px;
 .line-4:after{
   width: 0;
   height: 0;
+}
+.join{
+  position: relative !important;
 }
 }
 
