@@ -2499,7 +2499,7 @@ transform: translateY(-17%);
 }
 .logo{
       width: 165px;
-      margin-right: 29px;
+      margin-right: 15px;
 }
 .about-us{
       grid-template-columns: repeat(1,auto);
