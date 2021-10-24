@@ -278,6 +278,9 @@ html[dir="rtl"] .header-text{
 html[dir="rtl"] .more-bg span{
   left: -12px;
 }
+html[dir="rtl"] .new-arrow{
+  left: -6px;
+}
 html[dir="rtl"] .join:hover button{
   left: 0;
 }
@@ -287,7 +290,16 @@ html[dir="rtl"] .nav-toggle{
  html[dir="rtl"] .language{
     right: 15px;
    }
-
+html[dir="rtl"] .more-bg:hover a{
+  right: 0;
+  left: 0;
+}
+html[dir="rtl"] .more-bg:hover span{
+  left: -12px;
+}
+html[dir="rtl"] .join:hover .sec-arrow{
+  left: 0 !important;
+}
 html[dir="rtl"] .about-us-text p{
   padding-right: 0;
 }
@@ -705,6 +717,12 @@ html[dir="ltr"] .nav-dropdown{
   width: 100% !important;
   left: 50% !important;
   transform: translateX(0) !important;
+}
+html[dir="ltr"] .new-arrow{
+  right: -6px;
+}
+html[dir="ltr"] .chart-5:before{
+  transform: scaleX(-1);
 }
 html[dir="ltr"] .chart-3:before{
   right:129px;
@@ -2766,8 +2784,8 @@ padding: 150px 0 !important;
  margin-bottom: 26px;
 }
 .manager{
- width: 241px;
-    height: 76px;
+ width: 241px !important;
+ height: 76px !important;
 }
 .member-img img{
   width: 85px;
@@ -2793,7 +2811,7 @@ grid-gap: 47px;
 .chart-2-block h2{
   width: 100%;
   text-align: center;
-  font-size: 15px;
+  font-size: 15px !important;
 }
 .line:after{
   width: 47px;
@@ -2833,7 +2851,7 @@ grid-gap: 11px;
 display: inline-block;
 position: absolute;
 top: 14px;
-left: -6px;
+
 }
 .chart-4{
   display: none;
@@ -3215,7 +3233,7 @@ left: -6px;
   height: 47px;
 }
 .chart-3-block h2{
-  font-size: 9px;
+  font-size: 9px !important;
 }
 .chart-6-block{
   height: 60px;
