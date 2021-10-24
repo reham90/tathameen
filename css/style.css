@@ -282,7 +282,7 @@ html[dir="rtl"] .more-bg{
     transform: translateX(0);
 }
 html[dir="rtl"] .more-bg span{
-  left: -12px;
+  left: -12px !important;
 }
 html[dir="rtl"] .new-arrow{
   left: -6px;
@@ -3089,8 +3089,8 @@ top: 14px;
 }
 .footer-section .social{
   justify-content: center !important;
-  margin-bottom: 50px !important;
-  margin-top: 30px !important;
+  margin-bottom: -46px !important;
+  margin-top: 130px !important;
   position: relative;
 }
 .footer h3{
