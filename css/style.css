@@ -495,6 +495,7 @@ color: #818181;
 
  html[dir="ltr"] .about-us-text p:before{
  left: 97px;
+ height: 87px;
 }
 
  html[dir="ltr"] .services-content{
@@ -639,6 +640,25 @@ html[dir="ltr"] .header-scroll-down img{
  transform: scaleX(-1);
 }
 html[dir="ltr"] .member-name h2{
+  font-size: 16px;
+}
+html[dir="ltr"] .member-name p{
+  font-size: 13px;
+}
+html[dir="ltr"] .manager{
+  width: 320px;
+  height: 88px;
+}
+html[dir="ltr"] .chart-2-block h2{
+  font-size: 16px;
+}
+html[dir="ltr"] .chart-3-block h2{
+  font-size: 15px;
+}
+html[dir="ltr"] .chart-6-block h2{
+  font-size: 15px;
+}
+html[dir="ltr"] .work-block h2{
   font-size: 20px;
 }
 html[dir="ltr"] .line:after{
@@ -1504,7 +1524,7 @@ background-position: center;
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .accomplishment{
-  background-image: url(../images/accomplish-bg.png);
+  background-image: url(../images/accomplish-bg.jpg);
   background-repeat: no-repeat;
   height: 1360px;
   background-size: cover;
@@ -2078,7 +2098,7 @@ padding-top: 126px;
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .newsletter{
-  background-image: url(../images/newsletter-bg.png);
+  background-image: url(../images/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 509px;
